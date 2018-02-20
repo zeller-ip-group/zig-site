@@ -1,0 +1,59 @@
+{
+  "name": "zig-site",
+  "version": "1.0.0",
+  "company": "Zeller IP Group PLLC",
+  "description": "A Node.js site using Express on Heroku for Zeller IP Group PLLC",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Kyle Zeller",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.7.2",
+    "babel-core": "^6.22.1",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "browser-sync": "^2.18.7",
+    "del": "^2.2.2",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-watch": "^4.3.11",
+    "postcss-hexrgba": "^0.2.1",
+    "postcss-import": "^9.1.0",
+    "postcss-mixins": "^5.4.1",
+    "postcss-nested": "^1.0.0",
+    "postcss-simple-vars": "^3.0.0",
+    "webpack": "^1.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.1",
+    "babel-preset-stage-1": "^6.1.18",
+    "body-parser": "^1.17.1",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^2.0.1",
+    "lodash.foreach": "^4.5.0",
+    "nodemailer": "^4.0.1",
+    "smoothscroll": "^0.3.0",
+    "waypoints": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/zig-site.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express",
+    "gulp",
+    "webpack"
+  ],
+  "bugs": {
+    "url": "https://gitlab.com/TitanGlobalIT/malbrouck/issues"
+  },
+  "homepage": "https://gitlab.com/TitanGlobalIT/malbrouck#README"
+}

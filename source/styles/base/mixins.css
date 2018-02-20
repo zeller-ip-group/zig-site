@@ -1,0 +1,214 @@
+/*
+ *
+ * Client mixins
+ *
+ */
+
+@define-mixin shadow {
+    box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.15);
+}
+
+@define-mixin shadow-top {
+    box-shadow: 0px 2px 4px 4px rgba(0,0,0,0.25);
+}
+
+@define-mixin text-shadow_black {
+    text-shadow: 1px 1px 2px rgba(#000, .75);
+}
+
+@define-mixin text-shadow_grey {
+    text-shadow: 1px 1px 2px rgba(#BCBCBC, .75);
+}
+
+@define-mixin text-shadow_white {
+    text-shadow: 1px 1px 2px rgba(#FFF, .75);
+}
+
+@define-mixin text-shadow_blue_D--wide {
+  text-shadow: 3px 3px 2px rgba($ex-blue-D, .75);
+}
+
+@define-mixin inset {
+    box-shadow: inset 0px 4px 4px 2px rgba(0,0,0,0.15);
+}
+
+@define-mixin kern {
+    letter-spacing: .17rem;
+}
+
+@define-mixin hr-top {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #000;
+    margin: 20px 0;
+    display: block;
+}
+
+@define-mixin hr-bottom {
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid #000;
+    margin: 20px 0;
+    display: block;
+}
+
+@define-mixin grey-border-thin {
+    border: 1px solid $light-grey;
+}
+
+@define-mixin grey-border {
+    border: 2px solid $light-grey;
+}
+
+@define-mixin pulseGray {
+    @-webkit-keyframes pulseGray {
+        0% {
+            background-color: #DDD;
+        }
+        50% {
+            background-color: #c6c6c6;
+        }
+        100% {
+            background-color: #b0b0b0;
+        }
+    }
+}
+
+
+
+
+/*
+ *
+ * media queries
+ *
+ */
+
+@define-mixin portrait {
+    @media (orientation: portrait) {
+        @mixin-content;
+    }
+}
+
+@define-mixin landscape {
+    @media (orientation: landscape) {
+        @mixin-content;
+    }
+}
+
+/* Apple Watch */
+@define-mixin watch {
+    @media (min-width: 38mm) {
+        @mixin-content;
+    }
+}
+
+/* iPhone 5, 5s */
+@define-mixin phone {
+    @media (min-width: 320px) {
+        @mixin-content;
+    }
+}
+
+/* iPhone 6+ */
+@define-mixin phablet {
+    @media (min-width: 414px) {
+        @mixin-content;
+    }
+}
+
+/* iPad - mini, 1, 2, 3, 4 */
+@define-mixin tablet {
+    @media (min-width: 768px) {
+        @mixin-content;
+    }
+}
+
+/* iPad - Pro 12.9" */
+@define-mixin largeTablet {
+    @media (min-width: 1366px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin laptop {
+    @media (min-width: 1200px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin laptopRetina {
+    @media (min-width: 1200px) 
+    and (min-resolution: 192dpi){
+        @mixin-content;
+    }
+}
+
+
+@define-mixin Desktop {
+    @media (min-width: 1920px) {
+        @mixin-content;
+    }
+}
+
+/*
+ *
+ * format helpers
+ *
+ */
+
+
+@define-mixin center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@define-mixin centerX {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@define-mixin centerY {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@define-mixin center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@define-mixin clearfix {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* Only display content to screen readers. */
+@define-mixin hide-visually {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Truncates text, adding an ellipsis to represent overflow. */
+@define-mixin truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@define-mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

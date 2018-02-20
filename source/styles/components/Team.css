@@ -1,0 +1,24 @@
+.Team {
+text-align: left;
+  & h3 {
+    margin-bottom: 0;
+  }
+}
+
+@media all and (min-width: 840px) {
+  .Team {
+    &>.row {
+      display: flex;
+      align-items: stretch;
+      &>section {
+        display: flex;
+        align-items: stretch;
+        & .Bio {
+          &__fullBioButton {
+            align-self: flex-end;
+          }
+        }
+      }
+    }
+  }
+}

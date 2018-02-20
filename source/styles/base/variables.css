@@ -1,0 +1,34 @@
+/*
+*
+* colors
+*
+*/
+
+$dark-red: #7a121c;
+
+/*
+* Original ZIG Palette
+*/
+
+$black: #1a1a1a;
+$blue: #174573;
+$dark-blue: #003366;
+
+/*
+* Coolors Palette (https://coolors.co/00366d-cde1e2-5f83a3-40464d-3d6d8e)
+*/
+
+$dark-midnight-blue: #00366d;
+$columbia-blue: #cde1e2;
+$rackley_blue: #5f83a3;
+$outer-space_grey: #40464d;
+$queen-blue: #3d6d8e;
+
+/*
+* Color Hexa variations
+*/
+
+
+/* Shade of #174573 - (http://www.colorhexa.com/2776c5) */
+
+$bright-blue: #2776c5;

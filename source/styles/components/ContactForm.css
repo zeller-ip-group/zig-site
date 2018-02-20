@@ -1,0 +1,52 @@
+/* components/ContactForm.css */
+
+.ContactForm {
+  &__message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba($dark-blue, 0.97);
+    width: 100%;
+    height: 100%;
+    display: none;
+    padding: 2rem;
+    &__text {
+      color: #FFF;
+      font-size: 2rem;
+      text-align: center;
+      line-height: 1.2;
+    }
+    &>* {
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+    }
+    &--open {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
+
+
+
+#TGIT .formInput {
+  &-disabled {
+    background-color: rgba($outer-space_grey, 0.3);
+    border-color: rgba($outer-space_grey, 1);
+  }
+  &-good {
+    background-color: rgba(#008000, 0.3);
+    border-color: rgba(#008000, 1);
+  }
+  &-caution {
+    background-color: rgba(#ff4500, 0.3);
+    border-color: rgba(#ff4500, 1);
+  }
+  &-warning {
+    background-color: rgba($dark-red, 0.3);
+    border-color: rgba($dark-red, 1);
+  }
+}

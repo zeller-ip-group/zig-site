@@ -1,0 +1,7 @@
+#TGIT .AboutUs {
+  &__body {
+    & p {
+      color: $outer-space_grey;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.ContactInfo {
+  & h3 {
+    margin-bottom: 0.5rem;
+  }
+  & ul {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media all and (min-width: 840px) {
+  .ContactInfo {
+    text-align: right;
+  }
+}

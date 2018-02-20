@@ -1,0 +1,13 @@
+.CTA {
+  & .container {
+    max-width: 460px;
+  }
+}
+
+@media all and (min-width: 840px) {
+  .CTA {
+    & .container {
+      max-width: 750px;
+    }
+  }
+}

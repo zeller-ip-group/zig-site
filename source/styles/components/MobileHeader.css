@@ -1,0 +1,10 @@
+#TGIT .MobileHeader {
+  background-color: #FFF;
+  background-image: none;
+  box-shadow: 0 4px 0 0 $bright-blue;
+  &__button {
+    &:before {
+      color: $black;
+    }
+  }
+}

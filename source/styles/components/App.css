@@ -1,0 +1,47 @@
+/* components/App.css */
+
+.button {
+  background-color: $bright-blue;
+  &:hover {
+    background-color: $blue;
+  }
+  &:active {
+    background-color: $rackley_blue;
+  }
+}
+
+#TGIT .icon.major {
+  background-color: $bright-blue;
+  fill: red;
+}
+
+
+
+/* http://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header */
+
+.page-anchor {
+  display: block;
+  position: relative;
+  top: -44px;
+  visibility: hidden;
+}
+
+@media all and (min-width: 840px) {
+  .page-anchor {
+    display: block;
+    position: relative;
+    top: -95px;
+    visibility: hidden;
+  }
+}
+
+
+/* overrides */
+
+#TGIT .modal {
+  padding-right: 0 !important;
+}
+
+#TGIT .modal-dialog {
+  margin: 60px auto;
+}

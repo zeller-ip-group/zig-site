@@ -1,0 +1,40 @@
+#TGIT .Bio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  & .post {
+    overflow: hidden;
+    margin: 5px;
+  }
+  & img {
+    @mixin shadow;
+    border-radius: 0;
+  }
+  &__image {
+    & a {
+      margin: 0 0.5rem 0 0;
+    }
+  }
+  &__content {
+    &__title {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+      text-align: left;
+    }
+  }
+  &__fullBioButton {
+    margin: 0 0 20px;
+  }
+}
+
+@media all and (min-width: 840px) {
+  #TGIT .Bio {
+    &__content {
+      &__title {
+        font-size: 2rem;
+        margin: 1rem 0;
+        text-align: center;
+      }
+    }
+  }
+}

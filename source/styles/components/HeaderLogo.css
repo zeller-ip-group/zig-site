@@ -1,0 +1,12 @@
+#TGIT .HeaderLogo {
+  width: 140px;
+  margin: 5px auto 0;
+  padding: 0;
+}
+
+@media all and (min-width: 840px) {
+  #TGIT .HeaderLogo {
+    width: 300px;
+    margin: 0 auto 1rem;
+  }
+}
