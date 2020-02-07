@@ -13,8 +13,6 @@ module.exports = {
     mocha: false,
     jasmine: false
   },
-  ecmaFeatures: {},
-  globals: {},
   rules: {
     'comma-dangle': ['error', 'never'],
     'prefer-numeric-literals': 'off',
@@ -29,5 +27,7 @@ module.exports = {
       property: '__defineSetter__',
       message: 'Please use Object.defineProperty instead.',
     }],
+    'no-var': 'off',
+    strict: ['error', 'safe'],
   }
 };
