@@ -37,7 +37,7 @@
     "gulp": "^4.0.2",
     "gulp-cli": "^2.2.0",
     "lodash.foreach": "^4.5.0",
-    "nodemailer": "^6.4.2",
+    "nodemailer": "^6.4.16",
     "smoothscroll": "^0.4.0",
     "waypoints": "^4.0.1"
   },
